@@ -10,7 +10,8 @@ Git clone into lib and `require 'lib/raddressbook/raddressbook'`. Sorry, no macg
 
 ```ruby                 
 address_book = ABAddressBook.sharedAddressBook     
-query        = ABPerson.searchElementForProperty(KABEmailProperty, label:nil, key:nil, value:nil, comparison:KABNotEqual)
+query        = ABPerson.searchElementForProperty(KABEmailProperty, label:nil, key:nil, 
+  value:nil, comparison:KABNotEqual)
 
 contacts = address_book.recordsMatchingSearchElement(query)      
 ```
